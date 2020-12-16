@@ -4,6 +4,10 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+/**
+ * Класс для создания нужной БД, и небольшим заполнением для проверки работоспособности
+ */
+
 public class NewDB {
     public static void createDB(Connection connection) {
         try {

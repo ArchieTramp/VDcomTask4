@@ -13,6 +13,10 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
+/**
+ * Контроллер осуществляющий взаимодействие с фронт частью
+ */
+
 @WebServlet("/myservlet")
 public class TaskController extends HttpServlet {
 
