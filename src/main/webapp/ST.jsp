@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Artur
@@ -11,6 +12,10 @@
     <title>SkillToys</title>
 </head>
 <body>
+<section>
+    <h3>SkillToys</h3>
+    <jsp:useBean id="ST" scope="request" type="Model.ModelST"/>
+</section>
 </body>
 <table>
     <tr>
@@ -19,7 +24,7 @@
         <td>PRICE</td>
         <td>FORAGE</td>
     </tr>
-    <c:forEach items="${temp}" var = "d"><tr>
+    <c:forEach items="${ST}" var = "d"><tr>
     <td>${d.id}</td>
     <td>${d.name}</td>
     <td>${d.price}</td>

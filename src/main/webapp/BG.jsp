@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Artur
@@ -11,6 +12,10 @@
     <title>BoardGames</title>
 </head>
 <body>
+<section>
+    <h3>Boardgames</h3>
+    <jsp:useBean id="BG" scope="request" type="Model.ModelBG"/>
+</section>
 </body>
 <table>
     <tr>
@@ -19,7 +24,7 @@
         <td>PRICE</td>
         <td>CREATOR</td>
     </tr>
-    <c:forEach items="${temp}" var = "d"><tr>
+    <c:forEach items="${BG}" var = "d"><tr>
     <td>${d.id}</td>
     <td>${d.name}</td>
     <td>${d.price}</td>
